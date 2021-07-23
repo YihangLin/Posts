@@ -3,6 +3,8 @@ A website for users to create post and share comments.
 
 The website is built with React, mysql and I use JSON Web Token(jwt) to authenticate users.
 
+The backend uses Express js.
+
 Here is the home page looks like:
 ![homepage](/images/posts_homepage.png)
 
