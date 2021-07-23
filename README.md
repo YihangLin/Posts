@@ -26,7 +26,7 @@ user can create a new post by clicking the post button in navbar:
 users can click on their names from the navbar to view their own posts:
 ![userposts](images/posts_userposts.png)
 
-The detail page of a post:
+The detail page of a post, logged in users can leave a comment under each post:
 ![detail](/images/posts_detail.png)
 
 If you are the author of the post, you will have a edit button, and you can update the post:
