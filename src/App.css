@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  /* color: rgba(82, 1, 114, 0.959); */
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1600px;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: 1.25rem;
+  height: 8vh;
+  background-color: #4fc3f7;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  margin: 0 1rem 0 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: white;
+}
+
+.logo {
+  color: white;
+  padding: 0.5rem 1rem;
+}
+/* ul li a:hover { */
+  /* background-color: rgb(247, 247, 144); */
+/* } */
+
+.logout {
+  /* margin-left: 1.75rem; */
+  margin: 0 1rem 0 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  /* background-color: #ff8a65; */
+  cursor: pointer;
+  color: white;
+}
+
+.post {
+  color: white;
+  background-color: #3f51b5;
+}
+
+.login-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 92vh;
+  color: #4fc3f7;
+  /* background-color: pink; */
+}
+
+.login-box input[type='email'],.login-box input[type='password'],.login-box input[type='text']{
+  display: block;
+  margin-top: 1rem;
+  height: 3.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  /* color: #4fc3f7; */
+}
+
+.btn {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  padding: .75rem 1rem;
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid black;
+  /* color: #4fc3f7; */
+  /* outline: none; */
+}
+
+.btn:hover {
+  background-color: #4fc3f7;
+  color: white;
+}
+
+.home {
+  height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.in {
+  color: rgb(0, 140, 255);
+}
+
+.name {
+  /* cursor: default; */
+  text-transform: uppercase;
+}
+
+.message {
+  color: red;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+.content-container {
+  width: 80%;
+  margin: 0 auto;
+  /* position: relative; */
+  /* background-color: #b3e5fc; */
+}
+
+.sort {
+  color: #90a4ae;
+  margin: 1rem 0;
+}
+
+/* .posts-list {
+  display: flex;
+  flex-direction: column;
+} */
+
+.card {
+  padding: 1rem;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  margin: 1.5rem 0;
+  /* max-height: 8rem; */
+  /* border-bottom: 1px solid black; */
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  color: #039be5;
+}
+
+.card-post {
+  /* height: 5rem; */
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.6;
+}
+
+.card-info {
+  display: flex;
+  margin-top: 1rem;
+  color: #90a4ae;
+  /* font-size: 1rem; */
+}
+
+.card-author {
+  margin-right: 1rem;
+}
+
+.post-container {
+  padding: 1rem;
+  /* border: 1px solid #4fc3f7; */
+}
+
+.post-section {
+  border: 1px solid #4fc3f7;
+  padding: 0 0.5rem;
+}
+
+.post-title {
+  padding: 0.25rem 0.5rem;
+  display: block;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  border: none;
+  width: 100%;
+  font-weight: 700;
+  color: #039be5;
+  /* margin: 1rem; */
+}
+
+.post-detail {
+  font-size: 1.25rem;
+  padding: 0.25rem 0.5rem;
+  border: none;
+  width: 100%;
+  resize: none;
+  /* height: 50vh; */
+  line-height: 1.6;
+  color: black;
+}
+
+.post-title-border {
+  padding: 0.25rem 0.5rem;
+  display: block;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  /* border: none; */
+  width: 100%;
+  font-weight: 700;
+  color: #039be5;
+  /* margin: 1rem; */
+}
+
+.post-detail-border {
+  padding: 0.25rem 0.5rem;
+  font-size: 1.25rem;
+  /* border: none; */
+  width: 100%;
+  /* height: 50vh; */
+  line-height: 1.6;
+  color: black;
+}
+
+.btn-area {
+  display: flex;
+  /* justify-content: flex-end; */
+  justify-content: center;
+}
+
+.post-btn {
+  font-size: 1rem;
+  padding: 0.25em 0.75em;
+  /* margin-left: 1rem; */
+  /* margin-top: 1rem; */
+  margin: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.edit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.edit-btn {
+  color: #039be5;
+  cursor: pointer;
+  /* border: 1px solid #039be5; */
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
+  /* padding: 0; */
+  border: none;
+  font-size: 1.25rem;
+}
+
+.cancel-btn {
+  color: white;
+  background-color: #ef5350;
+  /* border: 1px solid black; */
+  border: none;
+}
+
+.confirm-btn {
+  color: white;
+  background-color: #039be5;
+  border: none;
+}
+
+/* .post-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
+} */
+
+.comment-info {
+  display: flex;
+  color: #90a4ae;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  /* line-height: 1.6; */
+}
+
+.comments {
+  line-height: 1.6;
+}
+
+.leave-comment {
+  width: 100%;
+  resize: none;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+}
+
+.comment-btn {
+  font-size: 1.25rem;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  /* text-align: right; */
+}
+
+.post-card-info {
+  display: flex;
+  /* margin-top: 1rem; */
+  color: #90a4ae;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
+}
+
+.create-post {
+  /* width: 50%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create-post form {
+  width: 50%;
+}
+
+.create-title {
+  font-size: 1.25rem;
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+  line-height: 2rem;
+}
+
+.submit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 50px;
+  bottom: 10px;
+  font-size: 1rem;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #3f51b5;
+  border-color: #3f51b5;
+}
+
+.back-to-top-false {
+  display: none;
+}
+
+@media (max-width: 500px){
+  ul li a {
+    padding: 0.5rem 0.25rem;
+    margin: 0 0.25rem;
+  }
+
+  .logout {
+    padding: 0.5rem 0.25rem;
+    margin: 0 0.25rem;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .content-container {
+    width: 100%;
+  }
+
+  .nav {
+    font-size: 1rem;
+  }
+}
